@@ -20,7 +20,7 @@ const login = () => {
   useEffect(() => {
     const checkLoginStatus=async()=>{
       try{
-        const token=await AsyncStorage.getItem("token");
+        const token=await AsyncStorage.getItem("authToken");
         if(token){
           router.replace("/(tabs)/home");
         }
